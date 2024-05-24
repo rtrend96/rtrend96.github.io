@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "node index.js",
+    "format": "npx prettier --write ."
+  },
+  "devDependencies": {
+    "husky": "^9.0.11",
+    "prettier": "^3.2.5",
+    "pretty-quick": "^4.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

@@ -1,786 +1,439 @@
 <!DOCTYPE html>
-<!--[if lt IE 9 ]><html class="no-js oldie" lang="en"> <![endif]-->
-<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-<!--[if (gte IE 9)|!(IE)]><!-->
-<html class="no-js" lang="en">
-<!--<![endif]-->
-
-<head>
-
-    <!--- basic page needs
-    ================================================== -->
-    <meta charset="utf-8">
-    <title>rtrend96</title>
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <!-- mobile specific metas
-    ================================================== -->
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- CSS
-    ================================================== -->
-    <link rel="stylesheet" href="css/base.css">
-    <link rel="stylesheet" href="css/vendor.css">
-    <link rel="stylesheet" href="css/main.css">
-
-    <!-- script
-    ================================================== -->
-    <script src="js/modernizr.js"></script>
-    <script src="js/pace.min.js"></script>
-
-    <!-- favicons
-    ================================================== -->
-   
-
-</head>
-
-<body id="top">
-
-    <!-- header
-    ================================================== -->
-    <header class="s-header">
-
-        <div class="header-logo">
-            <a class="site-logo" href="index.html">rtend96</a>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+            integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script defer src="app.js"></script>
+        <title>Rtrend96 - Front End Engineer</title>
+        <meta
+            name="description"
+            content="I am Rushikesh Nage,I DESIGN AND CODE BEAUTIFULLY SIMPLE THINGS, AND I LOVE WHAT I DO."
+        />
+        <meta
+            name="keywords"
+            content="Rushi, Rushikesh, Nage, Rushikesh Nage, web developer, front-end developer, India, United States,WI, Milwaukee, portfolio, job, linkedin, Indeed"
+        />
+    </head>
+    <body>
+        <div id="preloader">
+            <svg
+                id="animatedLogo"
+                viewBox="0 0 100 100"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+                <g>
+                    <g
+                        id="letter"
+                        transform="translate(34, 33)"
+                        fill="#000035"
+                        style="opacity: 0"
+                        font-family="Inter, sans-serif"
+                        font-size="50"
+                        font-weight="700"
+                        letter-spacing="4.16666603"
+                    >
+                        <text>
+                            <tspan x="0.141666985" y="33">rtrned96</tspan>
+                        </text>
+                    </g>
+                    
+                </g>
+            </svg>
         </div>
-
-        <nav class="header-nav-wrap">
-            <ul class="header-nav">
-                <li class="current"><a class="smoothscroll" href="#home" title="home">Home</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">About</a></li>
-                <li><a class="smoothscroll" href="#works" title="works">RESUME</a></li>
-                <!-- 
-
-                <li><a class="smoothscroll" href="#works" title="works">Works</a></li>
-
-                <li><a class="smoothscroll" href="#blog" title="blog">Blog</a></li> -->
-                <li><a class="smoothscroll" href="#contact" title="contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <a class="header-menu-toggle" href="#0"><span>Menu</span></a>
-
-    </header> <!-- end s-header -->
-
-
-    <!-- home
-   ================================================== -->
-    <section id="home" class="s-home page-hero target-section" data-parallax="scroll"
-        data-image-src="images/backimg.jpeg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
-
-        <div class="overlay"></div>
-        <div class="shadow-overlay"></div>
-
-        <div class="home-content">
-
-            <div class="row home-content__main">
-
-
-
-                <h1>
-
-                    Designer, Front-end Developer.
-                </h1>
-                <h3>I design and code beautifully simple things, and I love what I do.</h3>
-
-                <div class="home-content__buttons">
-                    <a href="#works" class="smoothscroll btn btn--stroke">
-                        Latest Projects
-                    </a>
-                    <a href="#about" class="smoothscroll btn btn--stroke">
-                        More About Me
-                    </a>
-                </div>
-
-                <div class="home-content__scroll">
-                    <a href="#about" class="scroll-link smoothscroll">
-                        <span>Scroll Down</span>
-                    </a>
-                </div>
-
-            </div>
-
-        </div> <!-- end home-content -->
-
-        <ul class="home-social">
+        <div class="scroll scroll-left">
+            <span>scroll down</span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <div class="scroll scroll-right">
+            <span>scroll down</span>
+            <i class="fa-solid fa-arrow-down"></i>
+        </div>
+        <ul class="media-links">
             <li>
-                <a href="https://www.linkedin.com/in/rushikesh-nage06/"><i class="im im-linkedin"
-                        aria-hidden="true"></i><span>Linkedin</span></a>
+                <a
+                    href="https://codepen.io/rtrend96"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="CodePen"
+                    
+                ><i class="fa-brands fa-codepen"></i></a>
             </li>
             <li>
-                <a href="https://github.com/rtrend96"><i class="im im-github"
-                        aria-hidden="true"></i><span>Github</span></a>
+                <a
+                    href="https://github.com/rtrend96"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="GitHub"
+                    ><i class="fa-brands fa-github"></i
+                ></a>
             </li>
             <li>
-                <a href="https://www.facebook.com/rushikesh.nage"><i class="im im-facebook"
-                        aria-hidden="true"></i><span>Facebook</span></a>
+                <a
+                    href=""
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="Twitter"
+                    ><i class="fa-brands fa-twitter"></i
+                ></a>
             </li>
             <li>
-                <a href="https://twitter.com/Rushike96931456"><i class="im im-twitter"
-                        aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/rushikesh_nage/"><i class="im im-instagram"
-                        aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="https://www.reddit.com/user/rtrend96"><i class="im im-reddit"
-                        aria-hidden="true"></i><span>Reddit</span></a>
-            </li>
-            <li>
-                <a href="https://www.pinterest.com/rushinage/"><i class="im im-pinterest"
-                        aria-hidden="true"></i><span>Pinterest</span></a>
+                <a
+                    href="https://www.linkedin.com/in/rushikesh-nage06/"
+                    target="_blank"
+                    rel="noopener"
+                    aria-label="LinkedIn"
+                    ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
             </li>
         </ul>
-        <!-- end home-social -->
+        <a class="gmail" href="mailto:rushinage0@gmail.com"
+            >rushinage0@gmail.com/a
+        >
+        <a href="#" class="go-top" aria-label="scroll back to top"
+            ><i class="fa-brands fa-space-awesome"></i
+        ></a>
 
-    </section> <!-- end s-home -->
-
-
-    <!-- about
-    ================================================== -->
-    <section id="about" class="s-about target-section">
-
-        <div class="row about-content">
-
-            <div class="col-six tab-full left">
-                <div class="col-full text-center">
-
-                    <div class="LI-profile-badge" data-version="v1" data-size="large" data-locale="en_US"
-                        data-type="vertical" data-theme="dark" data-vanity="rushikesh-nage06"><a class="LI-simple-link"
-                            href='https://www.linkedin.com/in/rushikesh-nage06?trk=profile-badge'>Rushikesh Nage</a>
-                    </div>
-                </div>
+        <nav>
+            <a href="#" class="nav__logo">
+                rtrend96
+            </a>
+            <ul class="nav__list">
+                <li><a href="#about">About</a></li>
+                <li><a href="#work">Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <a
+                        href="./Rushikesh-Nage.pdf"
+                        target="_blank"
+                        class="resume"
+                        >Resume</a
+                    >
+                </li>
+            </ul>
+            <div class="nav__menu">
+                <div class="hamburger"></div>
             </div>
-            <div class="col-six tab-full right">
-                <h2>Hi, I’m Rushikesh Nage. Nice to meet you.</h2>
-
-                <p class="lead">
-                    My Journey began as a Freelance Designer 1 year ago. Since then I have done remote work for Small
-                    firms and collaberated with talented people to create responsive websites for business and consumer
-                    use. I am Confident , Inquisitive and Perpetually work on improving my chops one design problem at
-                    at time.
-
-
-                </p>
-            </div>
-        </div>
-
-        <div class="row about-content">
-            <div class="col-full text-center">
-                <h2>Skills And Experiances</h2>
-
-            </div>
-
-
-            <div class="col-six tab-full left">
-                <h4>Quick learner with a can-do attitude, a coder at heart, and a strong believer in 'If there is a way to do it better...  find it'.<br>
-                    As a skilled front-end developer, I specialize in creating intuitive and responsive user interfaces for web applications. With 4 years of experience in the field, I have a solid understanding of HTML, CSS, and JavaScript, as well as experience with popular front-end frameworks such as React, Angular, and Vue.
-                    <br>
-                    My expertise includes the following:<br>
-                    Developing user-friendly interfaces that prioritize user experience. <br>
-                    Creating responsive designs that adapt to different screen sizes and devices. <br>
-                    Implementing accessibility best practices to ensure that web applications are usable by all users, regardless of their abilities. <br>
-                    Collaborating with cross-functional teams to ensure that projects are completed on time and meet business requirements. <br>
-                    Staying up-to-date with the latest trends and technologies in the front-end development space. <br>
-                    I am passionate about creating visually appealing, user-friendly web applications that deliver the exceptional user experience. <br>
-
-                </h4>
-            </div>
-
-            <div class="col-six tab-full right">
-
-
-                <ul class="skill-bars">
-
-                    <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>Ionic Native</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>React Native</strong>
-                    </li>
-  
-                    <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>HTML5</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent85"><span>85%</span></div>
-                        <strong>CSS3</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent70"><span>70%</span></div>
-                        <strong>ReactJS</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent80"><span>80%</span></div>
-                        <strong>PHP</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>CSS3</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent70"><span>70%</span></div>
-                        <strong>Angular JS</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent65"><span>65%</span></div>
-                        <strong>JQuery</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent70"><span>70%</span></div>
-                        <strong>Android</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent90"><span>90%</span></div>
-                        <strong>PHP</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent65"><span>65%</span></div>
-                        <strong>Python</strong>
-                    </li>
-                    <li>
-                        <div class="progress percent70"><span>70%</span></div>
-                        <strong>Java</strong>
-                    </li>
-                </ul>
-            </div>
-
-        </div> <!-- end about-content -->
-
-        <div class="row about-content about-content--buttons">
-            <div class="col-six tab-full right">
-                <a href="https://www.linkedin.com/in/rushikesh-nage06/" class="btn full-width">Hire Me Now</a>
-            </div>
-
-        </div> <!-- end about-content buttons -->
-
-
-
-
-
-
-        <div class="row about-content about-content--timeline">
-
-            <div class="col-full text-center">
-                <h3>RESUME</h3>
-            </div>
-
-            <div class="col-six tab-full left">
-                <h3>Education</h3>
-                <div class="timeline">
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">September 2019 - Present</p>
-                            <h3>Seidenberg School Of Computer Science and Information Systems (Pace University)</h3>
-                            <h5>Computer Science</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>Exploring knowledge and widening area of strength.</p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">August 2014 - May 2018</p>
-                            <h3>Ramrao Adik Institute of Technology (Mumbai University)</h3>
-                            <h5>Computer Engineering (Bachlor of Engineering)</h5>
-                        </div>
-
-                        <div class="timeline__desc">
-                            <p>
-                                As a 4 year undergraduate program, I focused more on programming and practical subjects
-                                rather than theory.
-                                During this I have applied its concept during the coding competitions held in various
-                                colleges as well as online platforms like CodeChef, Hackerrank and Hackerearth. I have
-                                won 2nd prize in JEST WITH JAVA organized by CSIRAIT coding competition and this has
-                                further boosted my passion for this field.
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                </div> <!-- end timeline -->
-            </div> <!-- end left -->
-
-            <div class="col-six tab-full right">
-                <h3>Work Experiance</h3>
-                <div class="timeline">
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h3>Foxconn (IAI)</h3>
-                            <p class="timeline__timeframe">October 2022 -Present</p>
-                            <h5>Front-End Engineer II</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                            -Work closely with product managers, designers, and other engineers to scope complex problems and break down new features into smaller releases.
-                       <br> -Responsible for Front-end team training on new technical adaptations, software cultures, code reviews through weekly code reviews, pair-programming sessions, and team-building workshops.
-               <br> -Analyzed product management and used customer feedback to drive improvements and innovation in Software Development. Defined the product marketing strategy, ensuring alignment with the company's goals.
-                            </p>
-                        </div>
-                        <div class="timeline__header">
-                            <p class="timeline__timeframe">June 2021- October 2022</p>
-                            <h5>Front-End Engineer I</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                            -Writing Frontend applications with HTML, CSS, JavaScript/TS, Vue/Pinia, NodeJS, and Python with Webpack while practicing CI/CD and Test-Driven(E2E) Development.
-                       <br> -Collaborated with designers and developers to create and maintain a consistent user experience across the application.
-                   <br>-Collaborating with backend engineers to drive the design of APIs and backend services.
-                                
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            
-                            <h3>Pace University, Lubin School of business</h3>
-                            <p class="timeline__timeframe">January 2021- May 2021</p>
-                            <h5>Graduate Assistant </h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                                -Responsible for designing and maintaining the Lubin School’s website on Drupal using HTML, JavaScript, and CSS.
-                            Collaborate with the project team of six to build, update, and deploy websites and webpages.
-                        Maintain E2E(Cypress) testing and update website functionalities using CSS and JavaScript framework in Integration with responsive design principles.
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            
-                            <h3>AgroFides INC.</h3>
-                            <p class="timeline__timeframe">August 2020- December 2020</p>
-                            <h5>Web Software Developer Intern</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                                Designing and developing Android feature app in React-Native like Field-Agent application.
-                                Working closely under the chief technical officer to deliver the features of the app as well as accessibility
-                                improvements for the app.
-
-
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h3>The greys and Blues</h3>
-                            <p class="timeline__timeframe">January 2019 - June 2019</p>
-                            <h5>Front-End web developer</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                                Maintained the company's e-commerce website using HTML, CSS and JavaScript and built project
-                                 databases using MYSQL to improve the company’s online presence and communication with clients.<br>
-                                Led team in industry standard design and development guidelines, ensuring best practices in cross-functional teamwork.
-                                
-
-
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                    <div class="timeline__block">
-                        <div class="timeline__bullet"></div>
-                        <div class="timeline__header">
-                            <h3>Agyaatsolutions.com</h3>
-                            <p class="timeline__timeframe">June 2018 - December 2018</p>
-                            <h5>Web Developer Intern</h5>
-                        </div>
-                        <div class="timeline__desc">
-                            <p>
-                                Collaborated in a team of four to develop an e-commerce website using Python, JAVAScript
-                                and MongoDB that enabled
-                                users to purchase groceries online, participating in the full development cycle of
-                                Planning, Analysis, Design,
-                                Development, Testing and Implementation.<br>
-                                Designed the front-end of the application using React, JavaScript, HTML, and CSS to
-                                create a user friendly interface for
-                                buying daily groceries.
-                            </p>
-                        </div>
-                    </div> <!-- end timeline__block -->
-
-                </div> <!-- end timeline -->
-            </div> <!-- end right -->
-
-        </div> <!-- end about-content timeline -->
-
-    </section> <!-- end about -->
-
-       
-    
-    
-    
-    
-    
-  
-
-    <section id="works" class="s-works target-section">
-
-        <div class="row narrow section-intro has-bottom-sep">
-            <div class="col-full">
-                <h3>Portfolio</h3>
-                <h1>See My Latest Projects.</h1>
-
+        </nav>
+        <main class="container">
+            <div class="flying-squares">
+                <div class="square"></div>
+                <div class="square"></div>
+                <div class="square"></div>
+              </div>
+            <header>
                
-            </div>
-        </div>
-
-        <div class="row masonry-wrap">
-            <div class="masonry">
-
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/Pano.png" class="thumb-link" title="The Beetle Car"
-                                data-size="1050x700">
-                                <img src="images/portfolio/gallery/Pano.png"
-                                    srcset="images/portfolio/gallery/Pano.png 1x, images/portfolio/gallery/Pano.png2x" alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Health Sense
-                            </h3>
-                            <p class="item-folio__cat">
-                                Android and IOS development project
-                            </p>
-                        </div>
-
-                        <a href="https://github.com/SensehacK/health-sense" class="item-folio__project-link" title="Project link">
-                            <i class="im im-link"></i>
-                        </a>
-
-                        <div class="item-folio__caption">
-                            Collaborate in team of five to create a mobile application that provides the user all health data in one application,
-eliminating overhead of different apps and showcasing health insights & statistics at their fingertips.
-• Design & develop the iOS mobile - watch application using Swift, incorporating Health Kit API, sharing those statistics
-with the server to provide more insights to the user, and recommending healthy tips catered towards the user’s
-profile.
-                        </div>
-
-                    </div> 
-                </div> 
-                 
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="images/portfolio/gallery/weather.PNG" class="thumb-link" title="Lighthouse"
-                                data-size="1050x700">
-                                <img src="images/portfolio/gallery/weather.PNG"
-                                    srcset="images/portfolio/gallery/weather.PNG 1x, images/portfolio/gallery/weather.PNG 2x"
-                                    alt="">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Weather-Info-App
-                            </h3>
-                            <p class="item-folio__cat">
-                                JavaScript and Node.js application
-                            </p>
-                        </div>
-
-                        <a href="https://github.com/rtrend96/weather-info-App" class="item-folio__project-link" title="Project link">
-                            <i class="im im-link"></i>
-                        </a>
-
-                        <div class="item-folio__caption">
-                            <p>
-                                Design and develop Java-script open source application using Node.js and NPM packages incorporate with Weather API in which it will give all weather forecast information by particular city name.
-                            </p>
-                        </div>
-
-                    </div> 
-                </div> 
-
-
- 
-
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="https://raw.githubusercontent.com/rtrend96/Brick_game/main/game.PNG" class="thumb-link" data-size="1050x700">
-                                <img src="https://raw.githubusercontent.com/rtrend96/Brick_game/main/game.PNG"
-                                    srcset="https://raw.githubusercontent.com/rtrend96/Brick_game/main/game.PNG 1x, https://raw.githubusercontent.com/rtrend96/Brick_game/main/game.PNG 2x" alt="Brick-Game">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Brick Game 
-                            </h3>
-                            <p class="item-folio__cat">
-                                Java-Script Game
-                            </p>
-                        </div>
-
-                        <a href="https://github.com/rtrend96/Brick_game" class="item-folio__project-link" title="Project link">
-                            <i class="im im-link"></i>
-                        </a>
-
-                        <span class="item-folio__caption">
-                            <p>Javascript Game</p>
-                        </span>
-                    </div> 
-                </div> 
-                <div class="masonry__brick">
-                    <div class="item-folio">
-
-                        <div class="item-folio__thumb">
-                            <a href="" class="thumb-link" data-size="1050x700">
-                                <img src="./images/portfolio/gallery/digital-recipe-box.png"
-                                     alt="Digital-Recipe-Book">
-                                <span class="shadow-overlay"></span>
-                            </a>
-                        </div>
-
-                        <div class="item-folio__text">
-                            <h3 class="item-folio__title">
-                                Digital-Recipe-Book
-                            </h3>
-                            <p class="item-folio__cat">
-                               Vue.js App
-                            </p>
-                        </div>
-
-                        <a href="https://github.com/rtrend96/digital-recipe-box" class="item-folio__project-link" title="Project link">
-                            <i class="im im-link"></i>
-                        </a>
-
-                        <span class="item-folio__caption">
-                            <p></p>
-                        </span>
-                    </div> 
-                </div> 
-            </div>
-        </div> 
-    </section> 
-
-    <!-- s-stats
-    ================================================== -->
-    <section id="contact" class="s-contact target-section">
-
-        <div class="overlay"></div>
-
-        <div class="row narrow section-intro">
-            <div class="col-full">
-                <h3>Contact</h3>
-                <h1>Interested in collaborating with me?</h1>
-
-                <p class="lead">I’m always open to discussing product developing work or partnership opportunities.</p>
-            </div>
-        </div>
-
-        <div class="row contact__main">
-            <div class="col-eight tab-full contact__form">
-                <form name="contactForm" id="contactForm" method="post" action="">
-                    <fieldset>
-
-                        <div class="form-field">
-                            <input name="contactName" type="text" id="contactName" placeholder="Name" value=""
-                                minlength="2" required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactEmail" type="email" id="contactEmail" placeholder="Email" value=""
-                                required="" aria-required="true" class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <input name="contactSubject" type="text" id="contactSubject" placeholder="Subject" value=""
-                                class="full-width">
-                        </div>
-                        <div class="form-field">
-                            <textarea name="contactMessage" id="contactMessage" placeholder="message" rows="10"
-                                cols="50" required="" aria-required="true" class="full-width"></textarea>
-                        </div>
-                        <div class="form-field">
-                            <button class="full-width btn--primary">Submit form</button>
-                            <div class="submit-loader">
-                                <div class="text-loader">Sending...</div>
-                                <div class="s-loader">
-                                    <div class="bounce1"></div>
-                                    <div class="bounce2"></div>
-                                    <div class="bounce3"></div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </fieldset>
-                </form>
-
-                <!-- contact-warning -->
-                <div class="message-warning">
-                    Something went wrong. Please try again.
+                <div class="header__card">
+                   <!-- TODO -->
                 </div>
-
-                <!-- contact-success -->
-                <div class="message-success">
-                    Your message was sent, thank you!<br>
+                <div class="header__text-content">
+                    <p class="header__hi">Hi, my name is</p>
+                    <h1>
+                        <span class="header__name">Rushikesh Nage,</span
+                        ><br /><span class="header__bio">Front End Engineer</span>
+                    </h1>
+                    <p class="header__intro">
+                        I DESIGN AND CODE BEAUTIFULLY SIMPLE THINGS, AND I LOVE WHAT I DO.
+                    </p>
+                    <div class="header__links">
+                        <a href="./Rushikesh-Nage.pdf" target="_blank"
+                            >Resume</a
+                        >
+                        <a href="#work">My Works</a>
+                    </div>
                 </div>
+            </header>
+            <div class="about" id="about">
+                <section class="about__myself translateUp">
+                    <h2>About Me</h2>
+                    <p>
+                        Quick learner with a can-do attitude, a coder at heart, and a strong believer in 'If there is a way to do it better... find it'.
+                        As a skilled front-end developer, I specialize in creating intuitive and responsive user interfaces for web applications. With 4 years of experience in the field, I have a solid understanding of HTML, CSS, and JavaScript, as well as experience with popular front-end frameworks such as React, Angular, and Vue.
+                      
 
+                       </p>
+                       <p>
+                        My expertise includes the following:
+                       </p>
+                       <p>
+                        Developing user-friendly interfaces that prioritize user experience. <br />
+                        Creating responsive designs that adapt to different screen sizes and devices. <br />
+                        Implementing accessibility best practices to ensure that web applications are usable by all users, regardless of their abilities.<br />
+                        Collaborating with cross-functional teams to ensure that projects are completed on time and meet business requirements.<br />
+                        Staying up-to-date with the latest trends and technologies in the front-end development space.<br />
+                        I am passionate about creating visually appealing, user-friendly web applications that deliver the exceptional user experience.
+                    </p>
+                </section>
+                <section class="about__skill translateUp">
+                    <h2>Things I've learned</h2>
+                    <ul class="about__skill-list">
+                        <li><img height="70" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/html/html.png" alt="html logo"></li>
+                        <li><img height="70" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png"  alt="CSS logo"></li>
+                        <li><img height="70" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4c/Typescript_logo_2020.svg/512px-Typescript_logo_2020.svg.png?20210506173343"  alt="type-script"></li>
+                        <li><img height="70" src="https://user-images.githubusercontent.com/68723584/126188258-4803fa05-5f68-427b-b4e7-042ae7ff1874.png"  alt="angular"></li>
+                        <li><img height="70" src="https://user-images.githubusercontent.com/68723584/126188112-8741af87-0e30-404e-84a1-e6b1a12a721a.png"  alt="javascript"></li>
+                        <li><img height="70" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/vue/vue.png"  alt="Vue"></li>
+                        <li><img height="70" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/firebase/firebase.png"  alt="firebase"></li>
+                        <li><img height="70" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/sass/sass.png"  alt="Sass"></li>
+                       <!--  <li><img height="70" src="https://user-images.githubusercontent.com/68723584/126188258-4803fa05-5f68-427b-b4e7-042ae7ff1874.png"  alt=""></i></li> -->
+                        <li><img height="70" src="https://user-images.githubusercontent.com/68723584/126187385-57ce4c79-2ff3-4842-b5a6-f43073f30fc2.png"  alt=""/></li>
+                    </ul>
+                </section>
             </div>
-            <div class="col-four tab-full contact__infos">
-                <h4 class="h06">Phone</h4>
-                <p>
-                    Mobile: (+1) 201 469 1112
-
-                </p>
-
-                <h4 class="h06">Email</h4>
-                <p>
-                    rushinage0@gmail.com
-                </p>
-
-                <h4 class="h06">Address</h4>
-                <p>
+            <div class="work" id="work">
+                <h2 class="translateUp">Some of my recent works and Project</h2>
+                <div class="work-section">
+                    <div class="cd-horizontal-timeline">
+                        <div class="timeline">
+                            <div class="events-wrapper">
+                                <div class="events">
+                                    <ol>
+                                        <li><a href="#0" data-date="01/1/2023" class="selected">1 Oct</a></li>
+                                        <li></li>
+                                        <li><a href="#0" data-date="01/4/2023">1 June</a></li>
+                                        <li></li>
+                                        <li><a href="#0" data-date="23/5/2023">23 Jan</a></li>
+                                        <li></li>
+                                        <li><a href="#0" data-date="31/14/2023">20 May</a></li>
+                                    </ol>
                     
-                    Milwaukee, WI<br>
-                    53235 US
-                </p>
-            </div>
+                                    <span class="filling-line" aria-hidden="true"></span>
+                                </div>
+                            </div> 
+                                
+                            <ul class="cd-timeline-navigation">
+                                <li><a href="#0" class="prev inactive">Prev</a></li>
+                                <li><a href="#0" class="next">Next</a></li>
+                            </ul> 
+                        </div>
+                    
+                        <div class="events-content">
+                            <ol>
+                                <li class="selected" data-date="01/1/2023">
+                                    <h2>Foxconn (IAI) AFE INC.</h2>
+                                    <span style="font-size: 20px;">application Software Engineer</span>
+                                    <span>October 1st, 2022</span>
+                                    <p>-Collaborating with product managers, designers, and engineers to analyze features in the
+                                         applications and develop product marketing strategies that align with the company's goals.<br />
+                                        -Developed a comprehensive Cypress test suite and optimized Test-Driven 
+                                        Development practices to achieve an exceptional 90% code coverage.<br />
+                                         -Conducting training sessions for team on new technical adaptations, 
+                                         software cultures, and code analyses through weekly code reviews and
+                                          pair-programming sessions. <br />
+                                         -Maintaining a 99% uptime for OPTIMO through 
+                                         effective error handling, monitoring performance, 
+                                         and automated deployment processes.<br />
+                                        
+                                        </p>
+                                        
+                                </li>
+                    
+                                <li data-date="01/4/2023">
+                                    <h2>Foxconn (IAI) AFE INC.</h2>
+                                    <span style="font-size: 20px;">Front-End Engineer</span>
+                                    <span>June 1st, 2021</span>
+                                    <p>	
+                                        -Developed Frontend applications with HTML, CSS, JavaScript/TS, React, 
+                                        NodeJS, and Python with Webpack while practicing CI/CD and Test-Driven(E2E) Development.<br />
+                                        -Designed and developed the frontend of IAI website and OPTIMO 
+                                        that digitizes human operations for performance measurements.<br />
+                                        -Utilized SonarQube and improved Frontend code quality to achieve a 90% increase in code coverage, 50% decrease 
+                                        in vulnerabilities and 80% reduction in code smells, ensuring a robust codebase.<br />
+                                        -Collaborated with designers and developers to create and maintain a consistent and 
+                                        user-friendly experience throughout the application.
+                                    </p>
+                                </li>
+                    
+                                <li data-date="23/5/2023">
+                                    <h2>Pace University, Lubin School of business</h2>
+                                    <span style="font-size: 20px;">Graduate Assistant</span>
+                                    <span>January 23, 2021</span>
+                                    <p>	
+                                        Responsible for designing and maintaining the Lubin School’s website on Drupal using HTML, 
+                                        JavaScript, and CSS. Collaborate with the project team of six to build, update, and deploy 
+                                        websites and webpages. Maintain E2E(Cypress) testing and update 
+                                        website functionalities using CSS and JavaScript framework in Integration with responsive 
+                                        design principles.
+                                    </p>
+                                </li>
+                    
+                                <li data-date="31/14/2023">
+                                    <h2>AgroFides INC.</h2>
+                                    <span style="font-size: 20px;">Web Software Developer Intern</span>
+                                    <span>August 23, 2020</span>
+                                    <p>	
+                                        Designing and developing Android feature app in React-Native like Field-Agent application. 
+                                        Working closely under the chief technical officer to deliver 
+                                        the features of the app as well as accessibility improvements for the app.
+                                    </p>
+                                </li>
+                    
 
-        </div>
-
-    </section> <!-- end s-contact -->
-
-
-    <!-- footer
-    ================================================== -->
-    <footer>
-        <div class="row">
-            <div class="col-full">
-
-                <div class="footer-logo">
-                    <a class="footer-site-logo" href="https://www.linkedin.com/in/rushikesh-nage06/">Rushikesh Nage</a>
-                </div>
-
-                <ul class="footer-social">
-                    <li><a href="https://www.linkedin.com/in/rushikesh-nage06/">
-                            <i class="im im-linkedin" aria-hidden="true"></i>
-                            <span>Linkedin</span>
-                        </a></li>
-                    <li><a href="https://github.com/rtrend96">
-                            <i class="im im-github" aria-hidden="true"></i>
-                            <span>Github</span>
-                        </a></li>
-                    <li><a href="https://www.facebook.com/rushikesh.nage">
-                            <i class="im im-facebook" aria-hidden="true"></i>
-                            <span>Facebook</span>
-                        </a></li>
-                    <li><a href="https://twitter.com/Rushike96931456">
-                            <i class="im im-twitter" aria-hidden="true"></i>
-                            <span>Twitter</span>
-                        </a></li>
-                    <li><a href="https://www.instagram.com/rushikesh_nage/">
-                            <i class="im im-instagram" aria-hidden="true"></i>
-                            <span>Instagram</span>
-                        </a></li>
-                    <li><a href="https://www.reddit.com/user/rtrend96">
-                            <i class="im im-reddit" aria-hidden="true"></i>
-                            <span>Reddit</span>
-                        </a></li>
-                    <li><a href="https://www.pinterest.com/rushinage/">
-                            <i class="im im-pinterest" aria-hidden="true"></i>
-                            <span>Pinterest</span>
-                        </a></li>
-                </ul>
-
-            </div>
-        </div>
-
-        <div class="row footer-bottom">
-
-            <div class="col-twelve">
-                <div class="copyright">
-                    <span><a href="https://github.com/rtrend96"></a>© Copyright Rushikesh Nage{rtrend96}</a></span>
-                    <span>Design by <a href="https://www.styleshout.com/">styleshout-rtrend96</a></span>
-                </div>
-
-                <div class="go-top">
-                    <a class="smoothscroll" title="Back to Top" href="#top"><i class="im im-arrow-up"
-                            aria-hidden="true"></i></a>
-                </div>
-            </div>
-
-        </div> <!-- end footer-bottom -->
-
-    </footer> <!-- end footer -->
-
-
-    <!-- photoswipe background
-    ================================================== -->
-    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
-
-        <div class="pswp__bg"></div>
-        <div class="pswp__scroll-wrap">
-
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <div class="pswp__ui pswp__ui--hidden">
-                <div class="pswp__top-bar">
-                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close"
-                        title="Close (Esc)"></button> <button class="pswp__button pswp__button--share"
-                        title="Share"></button> <button class="pswp__button pswp__button--fs"
-                        title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom"
-                        title="Zoom in/out"></button>
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
+                            </ol>
                         </div>
                     </div>
                 </div>
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button>
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
+                <div class="project-section">
+                    <div class="project translateUp">
+                        <a
+                            href=""
+                            target="_blank"
+                            rel="noopener"
+                            class="project__image"
+                        >
+                            <img src="" alt="" />
+                        </a>
+                        <section class="project__text">
+                            <span class="project__text-type">Project Type</span>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noopener"
+                                class="project__text-name"
+                                >Project name</a
+                            >
+                            <p class="project__text-info">
+                                Info
+                            </p>
+                            <div class="project__text-lang">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="project__text-links">
+                                <a
+                                    href="https://github.com/rtrend96"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Github code link"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="website link"
+                                    ><i class="fa-solid fa-eye"></i
+                                ></a>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="project translateUp">
+                        <a
+                            href=""
+                            target="_blank"
+                            rel="noopener"
+                            class="project__image"
+                        >
+                            <img src="" alt="" />
+                        </a>
+                        <section class="project__text">
+                            <span class="project__text-type">Type</span>
+                            <a
+                                href=""
+                                target="_blank"
+                                rel="noopener"
+                                class="project__text-name"
+                                >Name</a
+                            >
+                            <p class="project__text-info">
+                                Info
+                            </p>
+                            <div class="project__text-lang">
+                                <span>Html</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>ReactJS</span>
+                            </div>
+                            <div class="project__text-links">
+                                <a
+                                    href="https://github.com/rtrend96"
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="Github code link"
+                                    ><i class="fa-brands fa-github"></i
+                                ></a>
+                                <a
+                                    href=""
+                                    target="_blank"
+                                    rel="noopener"
+                                    aria-label="website link"
+                                    ><i class="fa-solid fa-eye"></i
+                                ></a>
+                            </div>
+                        </section>
+                    </div>
+                    
                 </div>
+                <a
+                    href="https://github.com/rtrend96"
+                    target="_blank"
+                    rel="noopener"
+                    class="work__view-more translateUp"
+                    >View more</a
+                >
             </div>
-
-        </div>
-
-    </div><!-- end photoSwipe background -->
-
-    <div id="preloader">
-        <div id="loader"></div>
-    </div>
-
-
-    <!-- Java Script
-    ================================================== -->
-    <script src="js/jquery-3.2.1.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-
-</body>
-
+        </main>
+        <footer>
+            <section class="contact translateUp" id="contact">
+                <h2>Get in touch</h2>
+                <p>
+                    Got a proposal or want to say hello? Send a mail. I'll
+                    respond as fast as I can.
+                </p>
+                <a
+                    href="mailto:rushinage0@gmail.com"
+                    aria-label="send email"
+                    ><i class="fa-solid fa-paper-plane"></i
+                ></a>
+            </section>
+            <ul class="footer__links translateUp">
+                <li>
+                    <a
+                        href="https://github.com/rtrend96"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="GitHub"
+                        ><i class="fa-brands fa-github"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href=""
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="Twitter"
+                        ><i class="fa-brands fa-twitter"></i
+                    ></a>
+                </li>
+                <li>
+                    <a
+                        href="https://www.linkedin.com/in/rushikesh-nage06/"
+                        target="_blank"
+                        rel="noopener"
+                        aria-label="LinkedIn"
+                        ><i class="fa-brands fa-linkedin-in"></i
+                    ></a>
+                </li>
+            </ul>
+            <p class="footer__text">
+                Coded with <span class="footer__text-heart">Love</span> by
+                <a href="">Rushikesh Nage</a>.
+            </p>
+        </footer>
+    </body>
 </html>
