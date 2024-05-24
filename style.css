@@ -10,7 +10,7 @@
   --header-txt: hsl(0, 0%, 0%);
   --primary-txt: hsl(225, 20%, 61%);
   --main-bg: #3a4664;
-  --cta: hsl(180, 7%, 92%);
+  --btn-text: hsl(180, 7%, 92%);
 }
 body {
   color: var(--primary-txt);
@@ -132,9 +132,9 @@ p {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  color: var(--cta);
+  color: var(--btn-text);
   background: var(--main-bg);
-  border: 2px solid var(--cta);
+  border: 2px solid var(--btn-text);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -155,7 +155,7 @@ p {
 }
 .go-top:hover {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 
 /* ----------nav---------- */
@@ -233,14 +233,14 @@ nav.active .nav__list {
   text-decoration: none;
 }
 .nav__list li a:hover {
-  color: var(--cta);
+  color: var(--btn-text);
 }
 .nav__list li:last-child {
   margin-top: 2rem;
 }
 .nav__list li .resume {
-  color: var(--cta);
-  border: 2px solid var(--cta);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-text);
   -webkit-border-radius: 0.3rem;
   -moz-border-radius: 0.3rem;
   -ms-border-radius: 0.3rem;
@@ -250,7 +250,7 @@ nav.active .nav__list {
 }
 .nav__list li .resume:hover {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 /* ------hamburger------ */
 
@@ -272,7 +272,7 @@ nav.active .nav__list {
   right: 0;
   width: 1.75rem;
   height: 2px;
-  background: var(--cta);
+  background: var(--btn-text);
   border-radius: 2px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -284,7 +284,7 @@ nav.active .nav__list {
   content: '';
   right: 0;
   height: 2px;
-  background: var(--cta);
+  background: var(--btn-text);
   border-radius: 2px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
@@ -328,7 +328,7 @@ nav.active .hamburger::after {
   transform: translate3d(0, -100%, 0);
 }
 .scroll-up nav {
-  background: #3a4664;
+  background: var(--main-bg);
   -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -414,7 +414,7 @@ header h1 {
   font-size: 35px;
 }
 .header__hi {
-  color: var(--cta);
+  color: var(--btn-text);
   margin-bottom: 0.5rem;
 }
 .header__name {
@@ -438,8 +438,8 @@ header h1 {
   text-align: center;
   text-decoration: none;
   padding: 0.75rem 0;
-  color: var(--cta);
-  border: 2px solid var(--cta);
+  color: var(--btn-text);
+  border: 2px solid var(--btn-text);
   border-radius: 5px;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
@@ -449,14 +449,14 @@ header h1 {
 }
 .header__links a:hover {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 .header__links a:last-child {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 .header__links a:last-child:hover {
-  color: var(--cta);
+  color: var(--btn-text);
   background: var(--main-bg);
 }
 
@@ -478,7 +478,7 @@ header h1 {
   margin-bottom: 2.5rem;
 }
 .about__myself a {
-  color: var(--cta);
+  color: var(--btn-text);
   text-decoration: none;
 }
 .about__myself a:hover {
@@ -498,7 +498,7 @@ header h1 {
   row-gap: 1rem;
 }
 .about__skill-list li {
-  color: var(--cta);
+  color: var(--btn-text);
   font-size: 5rem;
 }
 
@@ -605,7 +605,7 @@ header h1 {
   text-decoration: none;
   font-size: 1.3rem;
   padding-bottom: 15px;
-  color: hsl(225, 20%, 61%);
+  color: var(--primary-txt);
   /* fix bug on Safari - text flickering while timeline translates */
   -webkit-transform: translateZ(0);
   -moz-transform: translateZ(0);
@@ -796,7 +796,7 @@ header h1 {
   width: -moz-max-content;
   width: max-content;
   margin: 10px auto;
-  color: #000;
+  color: var(--header-txt);
   display: block;
   margin: 0.5rem 0;
   font-size: clamp(24px, 5vw, 28px);
@@ -806,7 +806,7 @@ header h1 {
   display: block;
   font-style: italic;
   margin: 10px auto;
-  color: var(--cta);
+  color: var(--btn-text);
   font-size: 13px;
 }
 .cd-horizontal-timeline .events-content em::before {
@@ -814,7 +814,7 @@ header h1 {
 }
 .cd-horizontal-timeline .events-content p {
   font-size: 20px;
-  color: #959595;
+  color: var(--btn-text);
 }
 .cd-horizontal-timeline .events-content em,
 .cd-horizontal-timeline .events-content p {
@@ -942,7 +942,7 @@ header h1 {
   text-align: left;
 }
 .project__text-type {
-  color: var(--cta);
+  color: var(--btn-text);
   font-size: 13px;
 }
 .project__text-name {
@@ -957,7 +957,7 @@ header h1 {
   font-weight: 500;
 }
 .project__text-name:hover {
-  color: var(--cta);
+  color: var(--btn-text);
 }
 .project__text-info {
   font-size: 1rem;
@@ -977,7 +977,7 @@ header h1 {
   gap: 0.5rem;
 }
 .project__text-lang span {
-  color: var(--cta);
+  color: var(--btn-text);
   background: rgba(0, 0, 0, 0.1);
   font-size: 13px;
   padding: 0.5rem 1rem;
@@ -999,7 +999,7 @@ header h1 {
   font-size: 1.5rem;
 }
 .project__text-links a:hover {
-  color: var(--cta);
+  color: var(--btn-text);
 }
 .work__view-more {
   display: block;
@@ -1007,8 +1007,8 @@ header h1 {
   width: -moz-max-content;
   width: max-content;
   color: var(--main-bg);
-  background: var(--cta);
-  border: 2px solid var(--cta);
+  background: var(--btn-text);
+  border: 2px solid var(--btn-text);
   font-weight: 500;
   text-decoration: none;
   border-radius: 5px;
@@ -1022,7 +1022,7 @@ header h1 {
   transition: all 0.3s linear;
 }
 .work__view-more:hover {
-  color: var(--cta);
+  color: var(--btn-text);
   background: var(--main-bg);
 }
 footer {
@@ -1055,7 +1055,7 @@ footer .contact {
 .contact a {
   width: 80px;
   height: 80px;
-  color: var(--cta);
+  color: var(--btn-text);
   font-size: 2rem;
   text-decoration: none;
   display: -webkit-box;
@@ -1068,7 +1068,7 @@ footer .contact {
   -ms-flex-align: center;
   align-items: center;
   margin: 0 auto;
-  border: 2px solid var(--cta);
+  border: 2px solid var(--btn-text);
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
@@ -1082,7 +1082,7 @@ footer .contact {
 }
 .contact a:hover {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 .footer__links {
   position: absolute;
@@ -1103,7 +1103,7 @@ footer .contact {
 .footer__links li a {
   width: 40px;
   height: 40px;
-  color: var(--cta);
+  color: var(--btn-text);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1114,7 +1114,7 @@ footer .contact {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
-  border: 1px solid var(--cta);
+  border: 1px solid var(--btn-text);
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -ms-transition: all 0.3s linear;
@@ -1123,7 +1123,7 @@ footer .contact {
 }
 .footer__links li a:hover {
   color: var(--main-bg);
-  background: var(--cta);
+  background: var(--btn-text);
 }
 .footer__text {
   position: absolute;
@@ -1133,7 +1133,7 @@ footer .contact {
   text-align: center;
 }
 .footer__text-heart {
-  color: var(--cta);
+  color: var(--btn-text);
 }
 .footer__text a {
   color: var(--primary-txt);
@@ -1145,7 +1145,7 @@ footer .contact {
   transition: all 0.3s linear;
 }
 .footer__text a:hover {
-  color: var(--cta);
+  color: var(--btn-text);
 }
 .translateUp {
   opacity: 0;
@@ -1265,7 +1265,7 @@ footer .contact {
     transition: all 0.3s ease-in-out;
   }
   .media-links li a:hover {
-    color: var(--cta);
+    color: var(--btn-text);
     display: block;
     -webkit-transform: translateY(-0.2rem) scale(1.05);
     -ms-transform: translateY(-0.2rem) scale(1.05);
@@ -1291,7 +1291,7 @@ footer .contact {
     transition: all 0.3s linear;
   }
   .gmail:hover {
-    color: var(--cta);
+    color: var(--btn-text);
   }
 
   .nav__menu {
@@ -1417,7 +1417,7 @@ footer .contact {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--cta);
+    background: var(--btn-text);
     inset: 0;
     mix-blend-mode: darken;
     z-index: 1;
