@@ -252,6 +252,53 @@ nav.active .nav__list {
   color: var(--main-bg);
   background: var(--btn-text);
 }
+/*  toggle btn */
+
+.toggle-light {
+  color: var(--primary-txt);
+}
+.toggle-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 36px;
+  color: var(--primary-txt);
+}
+.light {
+  width: 42px;
+  height: 42px;
+  display: block;
+}
+.dark {
+  width: 42px;
+  height: 42px;
+  display: none;
+}
+[data-theme='dark'] {
+  --header-txt: hsl(0, 0%, 100%);
+  --primary-txt: hsl(0, 0%, 100%);
+  --main-bg: #000000;
+  --btn-text: hsl(0, 0%, 100%);
+
+  .light {
+    display: none;
+    width: 42px;
+    height: 42px;
+  }
+  .dark {
+    display: block;
+    width: 42px;
+    height: 42px;
+  }
+}
+
+.transition {
+  body {
+    transition: all 1s ease-in-out;
+    transition-delay: 0s !important;
+  }
+}
 /* ------hamburger------ */
 
 .nav__menu {
