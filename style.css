@@ -461,7 +461,7 @@ header h1 {
   font-size: 35px;
 }
 .header__hi {
-  color: var(--btn-text);
+  color: var(--primary-txt);
   margin-bottom: 0.5rem;
 }
 .header__name {
