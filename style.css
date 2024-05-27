@@ -1489,7 +1489,7 @@ footer .contact {
     -ms-flex-order: 1;
     order: 1;
     text-align: left;
-    z-index: 1;
+    z-index: - 1;
   }
   .project__text-name {
     margin-left: auto;
