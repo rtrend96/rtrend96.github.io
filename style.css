@@ -1478,7 +1478,7 @@ footer .contact {
     display: block;
     height: 100%;
   }
-  .project-section .project:nth-child(even) .project__image {
+  .project-section .project:nth-child(odd) .project__image {
     -webkit-box-ordinal-group: 3;
     -ms-flex-order: 2;
     order: 2;
@@ -1520,12 +1520,12 @@ footer .contact {
     -ms-flex-pack: end;
     justify-content: flex-end;
   }
-  .project-section .project:nth-child(even) .project__text-lang {
+  .project-section .project:nth-child(odd) .project__text-lang {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
   }
-  .project-section .project:nth-child(even) .project__text-links {
+  .project-section .project:nth-child(odd) .project__text-links {
     -webkit-box-pack: start;
     -ms-flex-pack: start;
     justify-content: flex-start;
